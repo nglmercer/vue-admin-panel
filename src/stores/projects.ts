@@ -25,20 +25,24 @@ export const useProjectsStore = defineStore('projects', {
     },
 
     async add(project: Omit<Project, 'id' | 'created_at'>) {
-      const [newProject] = await addProject(project)
-      this.items.push(newProject)
+      const response = await addProject(project)
+      if (response.success) {
+        this.items.push(response.data)
+      }
     },
 
     async update(project: Project) {
-      const [updatedProject] = await updateProject(project)
-      const index = this.items.findIndex(({ id }) => id === project.id)
-      this.items.splice(index, 1, updatedProject)
+      const response = await updateProject(project)
+      if (response.success) {
+        const index = this.items.findIndex(({ id }) => id === project.id)
+        this.items.splice(index, 1, response.data)
+      }
     },
 
     async remove(project: Project) {
-      const isRemoved = await removeProject(project)
+      const response = await removeProject(project)
 
-      if (isRemoved) {
+      if (response) {
         const index = this.items.findIndex(({ id }) => id === project.id)
         this.items.splice(index, 1)
       }

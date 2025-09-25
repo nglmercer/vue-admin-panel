@@ -68,29 +68,18 @@ const onUserDelete = async (user: User) => {
 }
 
 const formatProjectNames = (projects: Project['id'][]) => {
-  const names = projects.reduce((acc, p) => {
+  if (!Array.isArray(projects) || projects.length === 0) return 'No projects'
+
+  const names = projects.reduce((acc: string[], p) => {
     const project = props.projects?.find(({ id }) => p === id)
-
-    if (project) {
-      acc.push(project.project_name)
-    }
-
+    if (project) acc.push(project.project_name)
     return acc
-  }, [] as string[])
-  if (names.length === 0) return 'No projects'
-  if (names.length <= 2) {
-    return names.map((name) => name).join(', ')
-  }
+  }, [])
 
-  return (
-    names
-      .slice(0, 2)
-      .map((name) => name)
-      .join(', ') +
-    ' + ' +
-    (names.length - 2) +
-    ' more'
-  )
+  if (names.length === 0) return 'No projects'
+  if (names.length <= 2) return names.join(', ')
+
+  return `${names.slice(0, 2).join(', ')} + ${names.length - 2} more`
 }
 </script>
 

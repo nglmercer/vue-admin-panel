@@ -57,7 +57,9 @@ watch(
 
     newUser.value = {
       ...props.user,
-      projects: props.user.projects.filter((projectId) => projects.value.find(({ id }) => id === projectId)),
+      projects: Array.isArray(props.user.projects)
+        ? props.user.projects.filter((projectId) => projects.value.find(({ id }) => id === projectId))
+        : [],
       avatar: props.user.avatar || '',
     }
   },

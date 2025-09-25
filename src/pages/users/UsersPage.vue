@@ -137,7 +137,12 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
     hide-default-actions
     :before-cancel="beforeEditFormModalClose"
   >
-    <h1 class="va-h5">{{ userToEdit ? 'Edit user' : 'Add user' }}</h1>
+    <h1
+      class="va-h5"
+      style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start"
+    >
+      {{ userToEdit ? 'Edit user' : 'Add user' }}
+    </h1>
     <EditUserForm
       ref="editFormRef"
       :user="userToEdit"
