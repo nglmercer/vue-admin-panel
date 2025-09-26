@@ -8,7 +8,8 @@ import { useVModel } from '@vueuse/core'
 import { Project } from '../../projects/types'
 
 const columns = defineVaDataTableColumns([
-  { label: 'Full Name', key: 'fullname', sortable: true },
+  { label: 'First Name', key: 'first_name', sortable: true },
+  { label: 'Last Name', key: 'last_name', sortable: true },
   { label: 'Email', key: 'email', sortable: true },
   { label: 'Username', key: 'username', sortable: true },
   { label: 'Role', key: 'role', sortable: true },
@@ -55,7 +56,7 @@ const { confirm } = useModal()
 const onUserDelete = async (user: User) => {
   const agreed = await confirm({
     title: 'Delete user',
-    message: `Are you sure you want to delete ${user.fullname}?`,
+    message: `Are you sure you want to delete ${user.first_name}?`,
     okText: 'Delete',
     cancelText: 'Cancel',
     size: 'small',
@@ -91,10 +92,10 @@ const formatProjectNames = (projects: Project['id'][]) => {
     :items="users"
     :loading="$props.loading"
   >
-    <template #cell(fullname)="{ rowData }">
+    <template #cell(first_name)="{ rowData }">
       <div class="flex items-center gap-2 max-w-[230px] ellipsis">
         <UserAvatar :user="rowData as User" size="small" />
-        {{ rowData.fullname }}
+        {{ rowData.first_name }}
       </div>
     </template>
 

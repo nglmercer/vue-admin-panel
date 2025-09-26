@@ -33,11 +33,11 @@ export const useProjects = (options?: { sorting?: Ref<Sorting>; pagination?: Ref
 
     const getSortItem = (obj: any, sortBy: Sorting['sortBy']) => {
       if (sortBy === 'project_owner') {
-        return getUserById(obj.project_owner)?.fullname
+        return getUserById(obj.project_owner)?.first_name
       }
 
       if (sortBy === 'team') {
-        return obj.team.map((user: any) => getUserById(user)?.fullname || '').join(', ')
+        return obj.team.map((user: any) => getUserById(user)?.first_name || '').join(', ')
       }
 
       if (sortBy === 'created_at') {

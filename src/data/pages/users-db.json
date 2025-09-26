@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "fullname": "Patrik Radkow",
+    "first_name": "Patrik Radkow",
     "email": "magicpan@example.gg",
     "username": "magicpan",
     "role": "user",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "fullname": "Martin Hoff",
+    "first_name": "Martin Hoff",
     "email": "niceadmin@mail.com",
     "username": "admin",
     "role": "admin",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "fullname": "Liz Macintosh",
+    "first_name": "Liz Macintosh",
     "email": "ebrown@gmail.com",
     "username": "ebrown",
     "role": "user",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "fullname": "M2",
+    "first_name": "M2",
     "email": "mrm@gmail.com",
     "username": "mrm",
     "role": "owner",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "fullname": "Kevin Smith",
+    "first_name": "Kevin Smith",
     "email": "kevin@gmail.com",
     "username": "kevin13",
     "role": "user",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "fullname": "Martin Hoff",
+    "first_name": "Martin Hoff",
     "email": "martin@gmail.com",
     "username": "martin3",
     "role": "user",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "fullname": "John Doe",
+    "first_name": "John Doe",
     "email": "john@mail.com",
     "username": "john",
     "role": "user",
@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "fullname": "Maksim Nedo",
+    "first_name": "Maksim Nedo",
     "email": "maksim@epic.com",
     "username": "maksim",
     "role": "admin",
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "fullname": "Dmitry Kuzmenko",
+    "first_name": "Dmitry Kuzmenko",
     "email": "dd@pp.com",
     "username": "dd",
     "role": "user",
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "fullname": "Rayan Gosling",
+    "first_name": "Rayan Gosling",
     "email": "rayan@u.ua",
     "username": "rayan",
     "role": "user",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "active": true,
-    "fullname": "Laura Smith",
+    "first_name": "Laura Smith",
     "email": "laura@example.gg",
     "username": "bbb",
     "role": "user",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "active": true,
-    "fullname": "Ted Mosby",
+    "first_name": "Ted Mosby",
     "email": "tedmosby@mail.com",
     "username": "gamer777",
     "role": "user",
@@ -122,7 +122,7 @@
   {
     "id": 13,
     "active": true,
-    "fullname": "Forrest Schmidt Jr.",
+    "first_name": "Forrest Schmidt Jr.",
     "email": "Willard23@gmail.com",
     "username": "Clementine72",
     "role": "user",
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "active": true,
-    "fullname": "Emilio Bruen",
+    "first_name": "Emilio Bruen",
     "email": "Amya51@hotmail.com",
     "username": "Madalyn_Brekke55",
     "role": "user",
@@ -142,7 +142,7 @@
   {
     "id": 15,
     "active": false,
-    "fullname": "Jenny Heathcote",
+    "first_name": "Jenny Heathcote",
     "email": "Granville_Lebsack38@yahoo.com",
     "role": "user",
     "username": "Vivienne98",
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "active": true,
-    "fullname": "Sonya Cummerata III",
+    "first_name": "Sonya Cummerata III",
     "email": "Toni2@yahoo.com",
     "role": "user",
     "username": "Norwood79",
@@ -162,7 +162,7 @@
   {
     "id": 17,
     "active": true,
-    "fullname": "Ruben Mitchell",
+    "first_name": "Ruben Mitchell",
     "email": "Lisette41@yahoo.com",
     "role": "user",
     "username": "Dariana_Schulist",
@@ -172,7 +172,7 @@
   {
     "id": 18,
     "active": true,
-    "fullname": "Blake Hudson I",
+    "first_name": "Blake Hudson I",
     "email": "Israel88@hotmail.com",
     "role": "user",
     "username": "Crystal.Brakus29",
@@ -182,7 +182,7 @@
   {
     "id": 19,
     "active": true,
-    "fullname": "Alison Mueller",
+    "first_name": "Alison Mueller",
     "email": "Darien_Mayer@gmail.com",
     "role": "user",
     "username": "Cordie.Grant",
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "active": false,
-    "fullname": "Miss Angelina Jenkins",
+    "first_name": "Miss Angelina Jenkins",
     "email": "Cristal.Sauer@yahoo.com",
     "role": "user",
     "username": "Peggie.Runolfsdottir",
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "active": true,
-    "fullname": "Mack Boyle",
+    "first_name": "Mack Boyle",
     "email": "Shanny30@gmail.com",
     "role": "user",
     "username": "Phoebe67",
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "active": true,
-    "fullname": "Raymond Simonis",
+    "first_name": "Raymond Simonis",
     "email": "Tressie.Bruen45@gmail.com",
     "role": "user",
     "username": "Percy37",
@@ -222,7 +222,7 @@
   {
     "id": 23,
     "active": true,
-    "fullname": "Janice Sporer",
+    "first_name": "Janice Sporer",
     "email": "Anastasia85@hotmail.com",
     "role": "user",
     "username": "Kali84",
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "active": true,
-    "fullname": "Francis Schowalter",
+    "first_name": "Francis Schowalter",
     "email": "Tess56@gmail.com",
     "role": "user",
     "username": "Robyn.Kris",
@@ -242,7 +242,7 @@
   {
     "id": 25,
     "active": true,
-    "fullname": "Emilio Hoppe",
+    "first_name": "Emilio Hoppe",
     "email": "Bruce49@yahoo.com",
     "role": "user",
     "username": "Clemmie.Kutch",
@@ -252,7 +252,7 @@
   {
     "id": 26,
     "active": true,
-    "fullname": "Janice Harber",
+    "first_name": "Janice Harber",
     "email": "Jude38@hotmail.com",
     "role": "user",
     "username": "Neal70",
@@ -261,7 +261,7 @@
   },
   {
     "id": 27,
-    "fullname": "Evelyn Morar",
+    "first_name": "Evelyn Morar",
     "email": "Laverne.Roberts@hotmail.com",
     "role": "user",
     "username": "Neal_Thompson84",
@@ -271,7 +271,7 @@
   },
   {
     "id": 28,
-    "fullname": "Antoinette Schneider",
+    "first_name": "Antoinette Schneider",
     "email": "Ambrose_Stehr25@gmail.com",
     "role": "user",
     "username": "Esta.Hickle",
@@ -281,7 +281,7 @@
   },
   {
     "id": 29,
-    "fullname": "Daniel Ebony",
+    "first_name": "Daniel Ebony",
     "email": "Nyah44@hotmail.com",
     "role": "user",
     "username": "Jade.Kuhlman90",

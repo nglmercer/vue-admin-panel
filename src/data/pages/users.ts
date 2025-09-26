@@ -45,7 +45,8 @@ const normalizeObject = <T = any>(
 
 // Transformaciones específicas para usuarios
 const userTransforms = {
-  fullname: (user: any) => `${user.first_name} ${user.last_name}`,
+  first_name: (user: any) => user.first_name || '',
+  last_name: (user: any) => user.last_name || '',
   active: (user: any) => user.is_active === 1,
 }
 
@@ -66,7 +67,7 @@ export const getUsers = async (filters: Partial<Filters & Pagination & Sorting>)
   }
 
   if (search) {
-    filteredUsers = filteredUsers.filter((user: User) => user.fullname.toLowerCase().includes(search.toLowerCase()))
+    filteredUsers = filteredUsers.filter((user: User) => user.first_name.toLowerCase().includes(search.toLowerCase()))
   }
 
   const { page = 1, perPage = 10 } = filters || {}

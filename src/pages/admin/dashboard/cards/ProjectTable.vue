@@ -48,7 +48,7 @@ const { getTeamOptions, getUserById } = useProjectUsers()
                 :user="getUserById(rowData.project_owner)!"
                 size="small"
               />
-              {{ getUserById(rowData.project_owner)?.fullname }}
+              {{ getUserById(rowData.project_owner)?.first_name }}
             </div>
           </template>
           <template #cell(team)="{ rowData: project }">

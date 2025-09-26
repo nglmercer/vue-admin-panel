@@ -4,7 +4,8 @@ export type UUID = `${string}-${string}-${string}-${string}-${string}`
 
 export type User = {
   id: UUID
-  fullname: string
+  first_name: string
+  last_name: string
   email: string
   username: string
   role: UserRole

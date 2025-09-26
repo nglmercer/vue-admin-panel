@@ -19,7 +19,8 @@ const props = defineProps({
 
 const defaultNewUser: Omit<User, 'id'> = {
   avatar: '',
-  fullname: '',
+  first_name: '',
+  last_name: '',
   role: 'user',
   username: '',
   notes: '',
@@ -116,19 +117,19 @@ const roleSelectOptions: { text: Capitalize<Lowercase<UserRole>>; value: UserRol
     <div class="self-stretch flex-col justify-start items-start gap-4 flex">
       <div class="flex gap-4 flex-col sm:flex-row w-full">
         <VaInput
-          v-model="newUser.fullname"
-          label="Full name"
+          v-model="newUser.first_name"
+          label="First name"
           class="w-full sm:w-1/2"
           :rules="[validators.required]"
-          name="fullName"
+          name="first_name"
         />
         <VaInput
-          v-model="newUser.username"
-          label="Username"
+          v-model="newUser.last_name"
+          label="Last name"
           class="w-full sm:w-1/2"
           :rules="[validators.required]"
-          name="username"
-        />
+          name="last_name"
+          />
       </div>
       <div class="flex gap-4 flex-col sm:flex-row w-full">
         <VaInput
@@ -162,6 +163,13 @@ const roleSelectOptions: { text: Capitalize<Lowercase<UserRole>>; value: UserRol
             :rules="[validators.required]"
             name="role"
             value-by="value"
+          />
+          <VaInput
+            v-model="newUser.username"
+            label="Username"
+            class="w-full"
+            :rules="[validators.required]"
+            name="username"
           />
         </div>
 

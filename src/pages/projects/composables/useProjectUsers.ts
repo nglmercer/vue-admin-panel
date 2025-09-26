@@ -21,10 +21,10 @@ export function useProjectUsers() {
 
         if (user) {
           acc.push({
-            label: user.fullname,
+            label: user.first_name,
             src: user.avatar,
-            fallbackText: user.fullname[0],
-            color: avatarColor(user.fullname),
+            fallbackText: user.first_name[0],
+            color: avatarColor(user.first_name),
           })
         }
 

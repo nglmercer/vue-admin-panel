@@ -46,7 +46,7 @@ const onUserSaved = async (user: User) => {
     await usersApi.update(user)
     if (!error.value) {
       notify({
-        message: `${user.fullname} has been updated`,
+        message: `${user.first_name} has been updated`,
         color: 'success',
       })
     }
@@ -55,7 +55,7 @@ const onUserSaved = async (user: User) => {
 
     if (!error.value) {
       notify({
-        message: `${user.fullname} has been created`,
+        message: `${user.first_name} has been created`,
         color: 'success',
       })
     }
@@ -65,7 +65,7 @@ const onUserSaved = async (user: User) => {
 const onUserDelete = async (user: User) => {
   await usersApi.remove(user)
   notify({
-    message: `${user.fullname} has been deleted`,
+    message: `${user.first_name} has been deleted`,
     color: 'success',
   })
 }

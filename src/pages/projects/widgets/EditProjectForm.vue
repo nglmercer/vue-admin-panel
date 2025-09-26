@@ -74,7 +74,7 @@ const teamFiltersSearch = ref('')
       v-model:search="ownerFiltersSearch"
       searchable
       label="Owner"
-      text-by="fullname"
+      text-by="first_name"
       track-by="id"
       value-by="id"
       :rules="[required]"
@@ -83,7 +83,7 @@ const teamFiltersSearch = ref('')
       <template #content="{ value: user }">
         <div v-if="user" :key="user.id" class="flex items-center gap-1 mr-4">
           <UserAvatar v-if="false" :user="user" size="18px" />
-          {{ user.fullname }}
+          {{ user.first_name }}
         </div>
       </template>
     </VaSelect>
@@ -91,7 +91,7 @@ const teamFiltersSearch = ref('')
       v-model="newProject.team"
       v-model:search="teamFiltersSearch"
       label="Team"
-      text-by="fullname"
+      text-by="first_name"
       track-by="id"
       value-by="id"
       multiple
@@ -103,7 +103,7 @@ const teamFiltersSearch = ref('')
         <template v-if="valueArray?.length">
           <div v-for="(user, index) in valueArray" :key="user.id" class="flex items-center gap-1 mr-2">
             <UserAvatar v-if="user" :user="user" size="18px" />
-            {{ user.fullname }}{{ index < valueArray.length - 1 ? ',' : '' }}
+            {{ user.first_name }}{{ index < valueArray.length - 1 ? ',' : '' }}
           </div>
         </template>
       </template>

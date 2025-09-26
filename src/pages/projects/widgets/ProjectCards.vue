@@ -42,7 +42,7 @@ const { getUserById, getTeamOptions } = inject<any>('ProjectsPage')
           </h4>
           <p>
             <span class="text-[var(--va-secondary)]">Owner: </span>
-            <span v-if="getUserById(project.project_owner)">{{ getUserById(project.project_owner)!.fullname }}</span>
+            <span v-if="getUserById(project.project_owner)">{{ getUserById(project.project_owner)!.first_name }}</span>
           </p>
           <VaAvatarGroup class="my-4" :options="getTeamOptions(project.team)" :max="5" />
           <ProjectStatusBadge :status="project.status" />

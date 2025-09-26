@@ -68,7 +68,7 @@ const { getUserById, getTeamOptions } = inject<any>('ProjectsPage')
       <template #cell(project_owner)="{ rowData }">
         <div v-if="getUserById(rowData.project_owner)" class="flex items-center gap-2 ellipsis max-w-[230px]">
           <UserAvatar :user="getUserById(rowData.project_owner)" size="small" />
-          {{ getUserById(rowData.project_owner).fullname }}
+          {{ getUserById(rowData.project_owner).first_name }}
         </div>
       </template>
       <template #cell(team)="{ rowData: project }">
