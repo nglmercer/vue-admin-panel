@@ -49,6 +49,7 @@ import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { useForm, useToast } from 'vuestic-ui'
 import { validators } from '../../services/utils'
+import { loginApi } from '../../services/fetch/login'
 
 const { validate } = useForm('form')
 const { push } = useRouter()
@@ -59,10 +60,14 @@ const formData = reactive({
   password: '',
   keepLoggedIn: false,
 })
-
-const submit = () => {
+const baseUrl = 'http://localhost:3001'
+const submit = async () => {
   if (validate()) {
+    //implement login
+    const LoginData = await loginApi.login(formData)
+    console.log('data', formData, LoginData)
     init({ message: "You've successfully logged in", color: 'success' })
+    return
     push({ name: 'dashboard' })
   }
 }

@@ -12,6 +12,20 @@
       label="Email"
       type="email"
     />
+    <VaInput
+      v-model="formData.first_name"
+      :rules="[(v) => !!v || 'First name is required']"
+      class="mb-4"
+      label="First name"
+      type="text"
+    />
+    <VaInput
+      v-model="formData.last_name"
+      :rules="[(v) => !!v || 'Last name is required']"
+      class="mb-4"
+      label="Last name"
+      type="text"
+    />
     <VaValue v-slot="isPasswordVisible" :default-value="false">
       <VaInput
         ref="password1"
@@ -63,6 +77,7 @@
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { useForm, useToast } from 'vuestic-ui'
+import { loginApi } from '../../services/fetch/login'
 
 const { validate } = useForm('form')
 const { push } = useRouter()
@@ -70,25 +85,37 @@ const { init } = useToast()
 
 const formData = reactive({
   email: '',
+  first_name: '',
+  last_name: '',
   password: '',
   repeatPassword: '',
 })
 
-const submit = () => {
+const submit = async () => {
   if (validate()) {
+    const registerData = await loginApi.register({
+      email: formData.email,
+      password: formData.password,
+      first_name: formData.first_name,
+      last_name: formData.last_name,
+    })
     init({
       message: "You've successfully signed up",
       color: 'success',
     })
+    return console.log(registerData)
     push({ name: 'dashboard' })
   }
 }
-
+const StringNameRules: ((v: string) => boolean | string)[] = [
+  (v) => !!v || 'Name field is required',
+  (v) => (v && v.length >= 1) || 'Name must be at least 2 characters long',
+]
 const passwordRules: ((v: string) => boolean | string)[] = [
   (v) => !!v || 'Password field is required',
   (v) => (v && v.length >= 8) || 'Password must be at least 8 characters long',
   (v) => (v && /[A-Za-z]/.test(v)) || 'Password must contain at least one letter',
   (v) => (v && /\d/.test(v)) || 'Password must contain at least one number',
-  (v) => (v && /[!@#$%^&*(),.?":{}|<>]/.test(v)) || 'Password must contain at least one special character',
+  (v) => (v && /[^A-Za-z0-9]/.test(v)) || 'Password must contain at least one special character',
 ]
 </script>
