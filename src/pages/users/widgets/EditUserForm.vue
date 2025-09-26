@@ -25,7 +25,7 @@ const defaultNewUser: Omit<User, 'id'> = {
   username: '',
   notes: '',
   email: '',
-  active: true,
+  is_active: true,
   projects: [],
 }
 
@@ -174,7 +174,7 @@ const roleSelectOptions: { text: Capitalize<Lowercase<UserRole>>; value: UserRol
         </div>
 
         <div class="flex items-center w-1/2 mt-4">
-          <VaCheckbox v-model="newUser.active" label="Active" class="w-full" name="active" />
+          <VaCheckbox v-model="newUser.is_active" label="Active" class="w-full" name="is_active" />
         </div>
       </div>
 

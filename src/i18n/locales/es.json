@@ -59,7 +59,7 @@
       "billingAddress": {
         "title": "Dirección de facturación",
         "personalInfo": "Información personal",
-        "firstName": "Nombre y apellido",
+        "first_name": "Nombre y apellido",
         "email": "Email",
         "address": "Dirección",
         "companyInfo": "Información de la empresa",

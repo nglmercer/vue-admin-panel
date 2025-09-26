@@ -59,7 +59,7 @@
       "billingAddress": {
         "title": "Endereço de Cobrança",
         "personalInfo": "Informação Pessoal",
-        "firstName": "Nome e Sobrenome",
+        "first_name": "Nome e Sobrenome",
         "email": "Email",
         "address": "Endereço",
         "companyInfo": "Informação da Empresa",

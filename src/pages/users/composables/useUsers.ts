@@ -6,7 +6,7 @@ import { useUsersStore } from '../../../stores/users'
 
 const makePaginationRef = () => ref<Pagination>({ page: 1, perPage: 10, total: 0 })
 const makeSortingRef = () => ref<Sorting>({ sortBy: 'first_name', sortingOrder: null })
-const makeFiltersRef = () => ref<Partial<Filters>>({ isActive: true, search: '' })
+const makeFiltersRef = () => ref<Partial<Filters>>({ is_active: true, search: '' })
 
 export const useUsers = (options?: {
   pagination?: Ref<Pagination>

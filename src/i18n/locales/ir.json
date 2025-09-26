@@ -59,7 +59,7 @@
       "billingAddress": {
         "title": "نشانی صورتحساب",
         "personalInfo": "اطلاعات شخصی",
-        "firstName": "نام و نام خانوادگی",
+        "first_name": "نام و نام خانوادگی",
         "email": "رایانما",
         "address": "نشانی",
         "companyInfo": "اطلاعات شرکت",

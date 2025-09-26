@@ -1,8 +1,7 @@
 [
   {
     "id": "5d2c865e9a0bae79a6ef7cfa",
-    "firstName": "Ashley",
-    "lastName": "Mcdaniel",
+    "last_name": "Mcdaniel",
     "first_name": "Ashley Mcdaniel",
     "email": "ashleymcdaniel@nebulean.com",
     "country": "Cayman Islands",
@@ -17,8 +16,7 @@
   },
   {
     "id": "5d2c865ec73341e16e5f2251",
-    "firstName": "Sellers",
-    "lastName": "Todd",
+    "last_name": "Todd",
     "first_name": "Todd Sellers",
     "email": "sellerstodd@nebulean.com",
     "country": "Togo",
@@ -33,8 +31,7 @@
   },
   {
     "id": "5d2c865e38800c5ce28f2f6b",
-    "firstName": "Sherman",
-    "lastName": "Knowles",
+    "last_name": "Knowles",
     "first_name": "Sherman Knowles",
     "email": "shermanknowles@nebulean.com",
     "country": "Central African Republic",
@@ -49,8 +46,7 @@
   },
   {
     "id": "5d2c865e957cd150b82e17a6",
-    "firstName": "Vasquez",
-    "lastName": "Lawson",
+    "last_name": "Lawson",
     "first_name": "Vasquez Lawson",
     "email": "vasquezlawson@nebulean.com",
     "country": "Bouvet Island",
@@ -65,8 +61,7 @@
   },
   {
     "id": "5d2c865e9194dbe2faf99227",
-    "firstName": "April",
-    "lastName": "Sykes",
+    "last_name": "Sykes",
     "first_name": "April Sykes",
     "email": "aprilsykes@nebulean.com",
     "country": "Saint Vincent and The Grenadines",
@@ -81,8 +76,7 @@
   },
   {
     "id": "5d2c865e1ed74d83f6b26934",
-    "firstName": "Hodges",
-    "lastName": "Garrison",
+    "last_name": "Garrison",
     "first_name": "Hodges Garrison",
     "email": "hodgesgarrison@nebulean.com",
     "country": "Zimbabwe",
@@ -97,8 +91,7 @@
   },
   {
     "id": "5d2c865e0ef31380880c3de5",
-    "firstName": "Therese",
-    "lastName": "Stokes",
+    "last_name": "Stokes",
     "first_name": "Therese Stokes",
     "email": "theresestokes@nebulean.com",
     "country": "Mali",
@@ -113,8 +106,7 @@
   },
   {
     "id": "5d2c865e4b5ab4727e5c8b69",
-    "firstName": "Goodwin",
-    "lastName": "Brewer",
+    "last_name": "Brewer",
     "first_name": "Goodwin Brewer",
     "email": "goodwinbrewer@nebulean.com",
     "country": "Iraq",
@@ -129,8 +121,7 @@
   },
   {
     "id": "5d2c865e4c4d675787cfe1c0",
-    "firstName": "Gomez",
-    "lastName": "Wise",
+    "last_name": "Wise",
     "first_name": "Gomez Wise",
     "email": "gomezwise@nebulean.com",
     "country": "Portugal",
@@ -145,8 +136,7 @@
   },
   {
     "id": "5d2c865e1017c3229017fc68",
-    "firstName": "Laverne",
-    "lastName": "Ayers",
+    "last_name": "Ayers",
     "first_name": "Laverne Ayers",
     "email": "laverneayers@nebulean.com",
     "country": "Micronesia",
@@ -161,8 +151,7 @@
   },
   {
     "id": "5d2c865ee66676fd7464f8b9",
-    "firstName": "Stewart",
-    "lastName": "Leon",
+    "last_name": "Leon",
     "first_name": "Stewart Leon",
     "email": "stewartleon@nebulean.com",
     "country": "Seychelles",
@@ -177,8 +166,7 @@
   },
   {
     "id": "5d2c865e644d8acbed1e0e97",
-    "firstName": "Lindsey",
-    "lastName": "Hopkins",
+    "last_name": "Hopkins",
     "first_name": "Lindsey Hopkins",
     "email": "lindseyhopkins@nebulean.com",
     "country": "Costa Rica",
@@ -193,8 +181,7 @@
   },
   {
     "id": "5d2c865ef2b732c74dc3d6a2",
-    "firstName": "Head",
-    "lastName": "Lloyd",
+    "last_name": "Lloyd",
     "first_name": "Head Lloyd",
     "email": "headlloyd@nebulean.com",
     "country": "Turkey",
@@ -209,8 +196,7 @@
   },
   {
     "id": "5d2c865e4ee4f09e92ead2e7",
-    "firstName": "Fisher",
-    "lastName": "Bradford",
+    "last_name": "Bradford",
     "first_name": "Fisher Bradford",
     "email": "fisherbradford@nebulean.com",
     "country": "Ethiopia",
@@ -225,8 +211,7 @@
   },
   {
     "id": "5d2c865e88d46a9e9049a549",
-    "firstName": "Aurora",
-    "lastName": "Bird",
+    "last_name": "Bird",
     "first_name": "Aurora Bird",
     "email": "aurorabird@nebulean.com",
     "country": "Burkina Faso",
@@ -241,8 +226,7 @@
   },
   {
     "id": "5d2c865e44bf14ea96d6e752",
-    "firstName": "Bonita",
-    "lastName": "Shields",
+    "last_name": "Shields",
     "first_name": "Bonita Shields",
     "email": "bonitashields@nebulean.com",
     "country": "Cote D'Ivoire (Ivory Coast)",
@@ -257,8 +241,7 @@
   },
   {
     "id": "5d2c865e2a8be26f6ac4369c",
-    "firstName": "Ethel",
-    "lastName": "Underwood",
+    "last_name": "Underwood",
     "first_name": "Ethel Underwood",
     "email": "ethelunderwood@nebulean.com",
     "country": "Vanuatu",
@@ -273,8 +256,7 @@
   },
   {
     "id": "5d2c865e5e0aea40111c37f8",
-    "firstName": "Parker",
-    "lastName": "May",
+    "last_name": "May",
     "first_name": "Parker May",
     "email": "parkermay@nebulean.com",
     "country": "Pakistan",
@@ -289,8 +271,7 @@
   },
   {
     "id": "5d2c865e7e0c05ecc2d0c186",
-    "firstName": "Hillary",
-    "lastName": "Waters",
+    "last_name": "Waters",
     "first_name": "Hillary Waters",
     "email": "hillarywaters@nebulean.com",
     "country": "Comoros",
@@ -305,8 +286,7 @@
   },
   {
     "id": "5d2c865e80a72eeda016b169",
-    "firstName": "Raquel",
-    "lastName": "Ferrell",
+    "last_name": "Ferrell",
     "first_name": "Raquel Ferrell",
     "email": "raquelferrell@nebulean.com",
     "country": "China",
@@ -321,8 +301,7 @@
   },
   {
     "id": "5d2c865eafacadd378add679",
-    "firstName": "Pickett",
-    "lastName": "Page",
+    "last_name": "Page",
     "first_name": "Pickett Page",
     "email": "pickettpage@nebulean.com",
     "country": "Bermuda",
@@ -337,8 +316,7 @@
   },
   {
     "id": "5d2c865e772b1a75bb0a07b5",
-    "firstName": "Alyson",
-    "lastName": "Bailey",
+    "last_name": "Bailey",
     "first_name": "Alyson Bailey",
     "email": "alysonbailey@nebulean.com",
     "country": "United Arab Emirates",
@@ -353,8 +331,7 @@
   },
   {
     "id": "5d2c865e137c19a76b56210c",
-    "firstName": "Farley",
-    "lastName": "Meyers",
+    "last_name": "Meyers",
     "first_name": "Farley Meyers",
     "email": "farleymeyers@nebulean.com",
     "country": "Christmas Island",
@@ -369,8 +346,7 @@
   },
   {
     "id": "5d2c865eb0ba37a27aa9afe0",
-    "firstName": "Hinton",
-    "lastName": "Avery",
+    "last_name": "Avery",
     "first_name": "Hinton Avery",
     "email": "hintonavery@nebulean.com",
     "country": "Liechtenstein",

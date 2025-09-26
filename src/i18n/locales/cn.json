@@ -59,7 +59,7 @@
       "billingAddress": {
         "title": "账单地址",
         "personalInfo": "个人信息",
-        "firstName": "名字 & 姓氏",
+        "first_name": "名字 & 姓氏",
         "email": "电子邮箱",
         "address": "地址",
         "companyInfo": "公司信息",

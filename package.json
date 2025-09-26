@@ -21,6 +21,11 @@
     "e2e": "yarn workspace e2e test",
     "e2e:update-snapshots": "yarn workspace e2e update"
   },
+  "lint-staged": {
+    "./src/**/*.{ts,js,vue}": [
+      "npm run lint"
+    ]
+  },
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.0.0",
     "@vuestic/compiler": "0.2.9",

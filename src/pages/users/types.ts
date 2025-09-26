@@ -12,5 +12,5 @@ export type User = {
   avatar: string
   projects: UUID[]
   notes: string
-  active: boolean
+  is_active: boolean
 }

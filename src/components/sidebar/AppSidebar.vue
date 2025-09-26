@@ -31,7 +31,7 @@
           <div v-for="(childRoute, index2) in route.children" :key="index2">
             <VaSidebarItem
               :to="{ name: childRoute.name }"
-              :active="isActiveChildRoute(childRoute)"
+              :active="is_activeChildRoute(childRoute)"
               :active-color="activeColor"
               :text-color="textColor(childRoute)"
               :aria-label="`Visit ${t(route.displayName)}`"
@@ -78,7 +78,7 @@ export default defineComponent({
       set: (v: boolean) => emit('update:visible', v),
     })
 
-    const isActiveChildRoute = (child: INavigationRoute) => route.name === child.name
+    const is_activeChildRoute = (child: INavigationRoute) => route.name === child.name
 
     const routeHasActiveChild = (section: INavigationRoute) => {
       if (!section.children) {
@@ -109,7 +109,7 @@ export default defineComponent({
       activeColor,
       navigationRoutes,
       routeHasActiveChild,
-      isActiveChildRoute,
+      is_activeChildRoute,
       t,
       iconColor,
       textColor,

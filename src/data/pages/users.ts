@@ -13,7 +13,7 @@ export type Sorting = {
 }
 
 export type Filters = {
-  isActive: boolean
+  is_active: boolean
   search: string
 }
 // Función genérica para convertir snake_case a camelCase
@@ -47,11 +47,11 @@ const normalizeObject = <T = any>(
 const userTransforms = {
   first_name: (user: any) => user.first_name || '',
   last_name: (user: any) => user.last_name || '',
-  active: (user: any) => user.is_active === 1,
+  is_active: (user: any) => user.is_active === 1,
 }
 
 export const getUsers = async (filters: Partial<Filters & Pagination & Sorting>) => {
-  const { isActive, search } = filters
+  const { is_active, search } = filters
 
   // Obtener y normalizar usuarios
   const rawUsers: User[] = await fetch(api.allUsers())
@@ -62,8 +62,8 @@ export const getUsers = async (filters: Partial<Filters & Pagination & Sorting>)
   console.log('filteredUsers', filteredUsers)
 
   // Filtros con propiedades normalizadas
-  if (isActive !== undefined) {
-    filteredUsers = filteredUsers.filter((user: User) => user.active === isActive)
+  if (is_active !== undefined) {
+    filteredUsers = filteredUsers.filter((user: User) => user.is_active)
   }
 
   if (search) {
